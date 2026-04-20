@@ -2,33 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ninjasoapopera</title>
-    <style>
-        
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinjaSoapOpera | Music Portal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
     <header>
         <h1>NinjaSoapOpera</h1>
-        <nav>
-            <a href="#">Music</a>
-            <a href="#">Art</a>
-            <a href="#">Pictures</a>
-            <a href="#">Culture</a>
-        </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="container">
+        <section id="playlist-section">
+            <h2>Latest Tracks</h2>
+            <div id="playlist">
+                <p>Loading tracks...</p>
+            </div>
+        </section>
+
+        <section id="upload-section">
+            <h2>Band Upload</h2>
+            <form id="uploadForm">
+                <input type="text" id="trackName" placeholder="Track Title" required>
+                <input type="file" id="audioFile" accept="audio/*" required>
+                <button type="submit" id="submitBtn">Upload to Secure Vault</button>
+            </form>
+            <div id="uploadStatus"></div>
         </section>
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
-
-
-
-
-
-

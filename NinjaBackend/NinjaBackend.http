@@ -1,0 +1,6 @@
+@NinjaBackend_HostAddress = http://localhost:5174
+
+GET {{NinjaBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

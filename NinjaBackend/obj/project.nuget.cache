@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cBAyQNTS0nI=",
+  "success": true,
+  "projectFilePath": "/Users/emiledin/Documents/Personal projects/ninjasoapopera/NinjaBackend/NinjaBackend.csproj",
+  "expectedPackageFiles": [
+    "/Users/emiledin/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0/microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
+    "/Users/emiledin/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
