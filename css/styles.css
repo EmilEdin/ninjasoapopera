@@ -1,0 +1,54 @@
+/* 1. Reset default margins and set a clean font */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* 2. Style the header and center it */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 2rem 0; /* Adds breathing room above and below */
+}
+
+/* 3. Style the Navigation */
+nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Spaces out the links */
+}
+
+/* 4. Make Links look like Buttons! */
+.nav-button {
+    color: white;
+    text-decoration: none; /* Removes the default underline */
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: #1a1a1a;
+}
+
+/* 5. The "Container" - keeping content readable */
+.container {
+    max-width: 800px; /* Prevents stretching too wide */
+    margin: 2rem auto; /* 'auto' centers it horizontally */
+    padding: 0 1.5rem; /* Prevents text from touching mobile screen edges */
+}
+
+/* 6. Semantic Sections */
+section {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
