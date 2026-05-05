@@ -13,10 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
             // 1. Ask the browser for the audio stream
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
             
-            // 2. Pass the stream to our Audio Engine!
+            // 2. Fetch the song JSON data
+            statusText.innerText = "Loading song data...";
+            const response = await fetch("assets/data/youre_only_lonely.json");
+            const songData = await response.json();
+            SingEngine.loadSongData(songData);
+            
+            // 3. Pass the stream to our Audio Engine!
             SingEngine.init(stream);
             
-            // 3. Start drawing the graph!
+            // 4. Start drawing the graph!
             SingUI.start();
             
             statusText.innerText = "Microphone connected! Sing to see your pitch.";
