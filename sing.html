@@ -17,8 +17,21 @@
         </nav>
     </header>
     <main class="container">
+        <section id="sing-setup">
+            <h2>Singing Practice</h2>
+            <p>Test your pitch against the target melody!</p>
+            <button id="startBtn" class="nav-button" style="color: black; border-color: black;">Start Practice</button>
+            <p id="status">Waiting to start...</p>
+        </section>
+        
+        <section id="graph-section">
+            <!-- The canvas is where JavaScript will draw our graph -->
+            <canvas id="pitchGraph" width="800" height="400" style="background: #222; border-radius: 8px; width: 100%;"></canvas>
+        </section>
     </main>
 
-    <script src="app.js"></script>
+    <script src="js/singEngine.js"></script>
+    <script src="js/singUI.js"></script>
+    <script src="js/sing.js"></script>
 </body>
 </html>
