@@ -133,7 +133,6 @@ const SingUI = {
         this.ctx.strokeStyle = "#00ff00"; // Neon green
         this.ctx.lineWidth = 3;
         let isTracingPitch = false;
-        
         for (let i = 0; i < this.pitchHistory.length; i++) {
             const pitch = this.pitchHistory[i];
             if (pitch > 0) {

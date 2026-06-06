@@ -1,4 +1,4 @@
-        // We create a global 'SingEngine' object so sing.js can talk to it
+// We create a global 'SingEngine' object so sing.js can talk to it
 const SingEngine = {
     audioContext: null,
     analyser: null,
